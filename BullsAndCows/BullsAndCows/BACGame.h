@@ -1,3 +1,5 @@
+#include "BACWord.h"
+
 typedef unsigned int uint;
 
 #pragma once
@@ -12,4 +14,10 @@ public:
 private:
 	uint bullsCount;
 	uint cowsCount;
+
+	bool isGameGoing;
+
+	uint triesLeft;
+
+	BACWord word;
 };

@@ -23,9 +23,16 @@ std::string BACWordGenerator::generateRandomWordOfLength(uint length) {
 
 	for (uint i = 0; i < length; i++) {
 		// get random value from 97 to 122
-		uint value = rand() % LETTERS_AMOUNT + FIRST_LETTER_ASCII_CODE;
+		bool letterFound = false;
 
-		resultString.push_back(char(value));
+		while (!letterFound) {
+			uint value = rand() % LETTERS_AMOUNT + FIRST_LETTER_ASCII_CODE;
+
+			if (resultString.find(char(value), 0) == std::string::npos) {
+				resultString.push_back(char(value));
+				letterFound = true;
+			}
+		}
 	}
 
 	return resultString;

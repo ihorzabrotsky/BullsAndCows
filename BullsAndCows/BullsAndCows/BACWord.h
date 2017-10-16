@@ -15,6 +15,10 @@ public:
 
 	uint getSize();
 	
+	bool isEqualToString(const std::string &string);
+
+	uint getBulls(const std::string &string);
+	uint getCows(const std::string &string);
 
 private:
 	std::string string;
