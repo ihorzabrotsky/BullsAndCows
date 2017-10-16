@@ -1,3 +1,5 @@
+typedef unsigned int uint;
+
 #pragma once
 class BACGame
 {
@@ -6,4 +8,8 @@ public:
 	~BACGame();
 
 	void start();
+
+private:
+	uint bullsCount;
+	uint cowsCount;
 };

@@ -145,11 +145,13 @@
   <ItemGroup>
     <ClInclude Include="BACWord.h" />
     <ClInclude Include="BACGame.h" />
+    <ClInclude Include="BACWordGenerator.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BACWord.cpp" />
+    <ClCompile Include="BACWordGenerator.cpp" />
     <ClCompile Include="BullsAndCows.cpp" />
     <ClCompile Include="BACGame.cpp" />
     <ClCompile Include="stdafx.cpp">

@@ -15,6 +15,10 @@ BACWord::~BACWord()
 }
 
 
-BACWord::setWord(const std::string &string) {
+void BACWord::setWord(const std::string &string) {
 	this->string = string;
+}
+
+uint BACWord::getSize() {
+	return string.size();
 }
